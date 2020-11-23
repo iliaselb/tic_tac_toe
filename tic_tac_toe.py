@@ -32,7 +32,7 @@ def add_x_at_position(board, position):
     :param position: a tuple with as first element the row number and as second element the column number.
            For example: (2,3) --> the position at the 3rd row and 4th column
     """
-    if position[0] in [*range(0, len(board)+1)] and position[0] in [*range(0, len(board)+1)]:
+    if len(board) > position[0] >= 0 and len(board) > position[1] >= 0:
         board[position[0]][position[1]] = "X"
 
 
@@ -40,7 +40,7 @@ def add_o_at_position(board, position):
     """
     Exactly the same as "add_x_at_position()" but instead of adding "X" you add "O" (big o, not zero 0).
     """
-    if position[0] in [*range(0, len(board)+1)] and position[0] in [*range(0, len(board)+1)]:
+    if len(board) > position[0] >= 0 and len(board) > position[1] >= 0:
         board[position[0]][position[1]] = "O"
 
 
@@ -54,7 +54,7 @@ def get_board_representation(board):
     :param board: A multidimensional list representing the board
     :return a string representation of the current state of the given board (see tests for details)
     """
-    '\n'.join(map(str, board))
+    print(board, sep='|')
 
 
 def player_x(board):

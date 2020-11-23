@@ -60,56 +60,56 @@ assert board == [[" ", "O", " "],
 ######################################
 # 4) get_board_representation(board) #
 ######################################
-# board = get_new_board(3)
-# board_representation = get_board_representation(board)
-# print(board_representation)
-# assert board_representation == " | | \n" \
-#                                "-----\n" \
-#                                " | | \n" \
-#                                "-----\n" \
-#                                " | | \n"  # This is in fact a one line string, I am just simplifying the view.
-# add_x_at_position(board, (1, 2))
-# board_representation = get_board_representation(board)
-# assert board_representation == " | | \n" \
-#                                "-----\n" \
-#                                " | |X\n" \
-#                                "-----\n" \
-#                                " | | \n"
-# add_o_at_position(board, (0, 0))
-# board_representation = get_board_representation(board)
-# assert board_representation == "O| | \n" \
-#                                "-----\n" \
-#                                " | |X\n" \
-#                                "-----\n" \
-#                                " | | \n"
-# add_x_at_position(board, (1, 1))
-# board_representation = get_board_representation(board)
-# assert board_representation == "O| | \n" \
-#                                "-----\n" \
-#                                " |X|X\n" \
-#                                "-----\n" \
-#                                " | | \n"
-# add_o_at_position(board, (1, 0))
-# board_representation = get_board_representation(board)
-# assert board_representation == "O| | \n" \
-#                                "-----\n" \
-#                                "O|X|X\n" \
-#                                "-----\n" \
-#                                " | | \n"
-# board = get_new_board(2)
-# board_representation = get_board_representation(board)
-# assert board_representation == " | \n" \
-#                                "---\n" \
-#                                " | \n"
-# board = get_new_board(4)
-# board_representation = get_board_representation(board)
-# assert board_representation == " | | | \n" \
-#                                "-------\n" \
-#                                " | | | \n" \
-#                                "-------\n" \
-#                                " | | | \n" \
-#                                "-------\n" \
-#                                " | | | \n"
+board = get_new_board(3)
+board_representation = get_board_representation(board)
+print(board_representation)
+assert board_representation == " | | \n" \
+                               "-----\n" \
+                               " | | \n" \
+                               "-----\n" \
+                               " | | \n"  # This is in fact a one line string, I am just simplifying the view.
+add_x_at_position(board, (1, 2))
+board_representation = get_board_representation(board)
+assert board_representation == " | | \n" \
+                               "-----\n" \
+                               " | |X\n" \
+                               "-----\n" \
+                               " | | \n"
+add_o_at_position(board, (0, 0))
+board_representation = get_board_representation(board)
+assert board_representation == "O| | \n" \
+                               "-----\n" \
+                               " | |X\n" \
+                               "-----\n" \
+                               " | | \n"
+add_x_at_position(board, (1, 1))
+board_representation = get_board_representation(board)
+assert board_representation == "O| | \n" \
+                               "-----\n" \
+                               " |X|X\n" \
+                               "-----\n" \
+                               " | | \n"
+add_o_at_position(board, (1, 0))
+board_representation = get_board_representation(board)
+assert board_representation == "O| | \n" \
+                               "-----\n" \
+                               "O|X|X\n" \
+                               "-----\n" \
+                               " | | \n"
+board = get_new_board(2)
+board_representation = get_board_representation(board)
+assert board_representation == " | \n" \
+                               "---\n" \
+                               " | \n"
+board = get_new_board(4)
+board_representation = get_board_representation(board)
+assert board_representation == " | | | \n" \
+                               "-------\n" \
+                               " | | | \n" \
+                               "-------\n" \
+                               " | | | \n" \
+                               "-------\n" \
+                               " | | | \n"
 
 
 #######################
